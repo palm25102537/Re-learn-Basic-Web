@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+<body>
+    <h1>Form Demo</h1>
+    <form action="/chickens.html">
+        <p>
+            <label for="username">Enter a Username</label>
+            <input id="username" name="username" type="text" placeholder="username"/>
+        </p>
+        <p>
+            <label for="password">Enter a Password</label>
+            <input id="password" name="password" type="password" placeholder="password"/>
+        </p>
+        <p>
+            <label for="color">Select a Color</label>
+            <input id="color" name="color" type="color"/>
+        </p>
+        <p>
+            <label for="number">Enter a Number</label>
+            <input type="number" name="num" min="0"  step="5" placeholder="enter a number"/>
+        </p> 
+        <button>Submit</button>
+    </form>
+    <br/>
+    <div>
+        <h2>Hijack search</h2>
+        <form action="http://www.reddict.com/search">
+            <input type="text" name="q"/>
+            <button>Search Reddict</button>
+        </form>
+        <form action="http://www.google.com/search"></form>
+            <input type="text" name="q">
+            <button>Search Google</button>
+        </form>
+    <form action="http://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    </div>
+    <div>
+        <form action="/birds">
+            <input value='true' type="checkbox" name="agree_tos" id="agree" />
+            <label for="agree">I agree to everything</label>
+            <p>
+                <label for="xs">XS:</label>
+                <input type="radio" name="size" id="xs" value="xs"/>
+                <label for="s">S:</label>
+                <input type="radio" name="size" id="s" value="m"/>
+                <label for="m">M:</label>
+                <input type="radio" name="size" id="m" value="m"/>
+            </p>
+            <p> 
+                <label for="meal">Please Select an Entree</label>
+                <select name="meal" id="meal"> 
+                    <option value="fish" selected>Fish</option>
+                    <option value="vegetable">Vegetable</option>
+                    <option value="steak">Steak</option>
+                </select>
+            </p>
+            <p>
+                <label for="cheese">Amount of Cheese</label>
+                <input type="range" min="1" max="10" value="5" id="cheese" name="cheese_level" />
+            </p>
+            <p>
+                <label for="request">Special Requests</label>
+                <br/>
+                <textarea id="request" name="request" rows="5" cols="50"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+    </div>
+    <!--attribute action specifies where the form data should be sent-->
+    <!--attribute method specifies which HTTP method should be used-->
+</body>
+</html>
