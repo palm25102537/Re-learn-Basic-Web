@@ -74,6 +74,24 @@
             </p>
             <button>Submit</button>
         </form>
+        <h2>Validation Demo</h2>
+        <form>
+            <label for="first">Enter First Name</label>
+            <input required type="text" id="first" name="first"/>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" minlength="5" maxlength="10" required/>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required/>
+            </p>
+            <p>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" />
+            </p>
+            <button>Submit</button>
+        </form>
     </div>
     <!--attribute action specifies where the form data should be sent-->
     <!--attribute method specifies which HTTP method should be used-->
