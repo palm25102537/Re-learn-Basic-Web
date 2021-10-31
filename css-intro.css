@@ -1,0 +1,19 @@
+h2{
+    color:#5FCFFC;
+    /*hex decimal*/
+    background-color: rgba(0,200,0);
+    /*rgb*/
+}
+/*h2 = selector*/
+
+button{
+    color:magenta;
+    background-color:cyan;
+    /*name color*/
+}
+
+p{
+    color:olive;
+    background:orange;
+    /*background isn't equal to background-color*/
+}
