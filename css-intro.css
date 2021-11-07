@@ -16,4 +16,14 @@ p{
     color:olive;
     background:orange;
     /*background isn't equal to background-color*/
+    font-weight:bold;
+    line-height:3px;
+}
+
+body{
+    background-color: #c5e;
+}
+
+h1{
+    text-align:center;
 }
