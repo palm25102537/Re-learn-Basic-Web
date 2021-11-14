@@ -17,13 +17,23 @@ p{
     background:orange;
     /*background isn't equal to background-color*/
     font-weight:bold;
-    line-height:3px;
+  
 }
 
 body{
-    background-color: #c5e;
+    background-color: #f1faee;
 }
 
 h1{
     text-align:center;
+}
+/*Use id selector*/
+#search{
+    background-color: #1d3557;
+    color:#f1faee;
+}
+
+.next a {
+    color:red;
+    text-decoration:orange wavy;
 }
