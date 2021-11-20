@@ -28,12 +28,110 @@ h1{
     text-align:center;
 }
 /*Use id selector*/
-#search{
+/* #search{
     background-color: #1d3557;
     color:#f1faee;
-}
+} */
 
 .next a {
     color:red;
     text-decoration:orange wavy;
 }
+
+/* Descendant selector
+x y {}
+select y that nested inside x 
+*/
+
+input + button {
+    background-color:palevioletred;
+    color:white;
+}
+
+li > a {
+    background-color: powderblue;
+    font-size:large;
+}
+
+footer > a {
+    color:#a8dadc;
+}
+/* Adjacent selector 
+x + y {}
++ means select only the y element that are immediately preceded by x
+x > y {}
+> means select only the y that are direct children of x
+*/
+
+input[type="text"] {
+    width:300px;
+    color:yellow;
+    background-color:royalblue;
+}
+
+ a[href="http://google.com"] {
+     background-color:seagreen;
+ }
+
+  p  input[type="checkbox"] + label {
+      background-color: black;
+      color:pink;
+  }
+  input[type="checkbox"]:checked{
+    box-shadow:0px 0px 0px 1px red;
+
+  }
+  p  input[type="checkbox"]:checked + label{
+    
+      color:white;
+  }
+
+  p  input[type="radio"]:checked + label{
+    color:red;
+}
+/* Attribute selector
+input[type="..."]
+ select all input element where the type attribute is set to ...
+*/
+
+ button:hover{
+     background-color: #e63946;
+ }
+
+ button:active{
+     background-color:tomato;
+     color:turquoise;
+ }
+
+ li a:hover {
+     background-color:pink;
+     color:white;
+ }
+
+ h2:nth-of-type(3){
+    color:magenta;
+}
+/*Pseudo class*/
+
+ h2::first-letter{
+     font-size:30px;
+ }
+
+ p::first-line{
+     color:red;
+ }
+
+ h1::first-line{
+     color:maroon;
+ }
+
+ p::selection{
+     background-color: lime;
+     color:blue;
+ }
+/*Pseudo element*/
+
+/*Specificity
+specific selector will win
+Id > class > element
+*/
