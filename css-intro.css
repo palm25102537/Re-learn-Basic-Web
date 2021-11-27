@@ -129,9 +129,25 @@ input[type="..."]
      background-color: lime;
      color:blue;
  }
+
+ #search{
+    background-color: firebrick !important;
+    color:white !important;
+ }
 /*Pseudo element*/
 
 /*Specificity
 specific selector will win
-Id > class > element
+!important>in-line style > Id > class > element
+*/
+
+.inheritance{
+    color:white !important;
+}
+
+.inheritance > p {
+    color:inherit;
+}
+/*
+Css inheritance
 */
