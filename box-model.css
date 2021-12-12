@@ -1,4 +1,4 @@
-div {
+/* div {
   width: 200px;
   height: 200px;
   background-color: #e5989b;
@@ -18,12 +18,12 @@ h1 {
   border-color: black;
   border-style: solid;
   /* box-sizing: border-box;  */
-  /*
+/*
     make the width that we set 
     ไม่ใส่ box-sizing เป็น border-box
     จะทำให้ border+ เพิ่มจาก width ที่กำหนดไว้
     */
-}
+/* }
 
 #two {
   background-color: #b5838d;
@@ -43,4 +43,53 @@ h1 {
 
 .pad {
   padding: 0px 10px;
+}
+
+.four {
+  background-color: turquoise;
+  border: 1px solid black;
+  width: 300px;
+  padding: 100px;
+  margin: 100px;
+}
+
+span {
+  background-color: turquoise;
+  border: 1px solid black;
+  width: 100px; /*Inline,width and height is ignored*/
+/* padding: 10px; ดันele อื่นออก
+  margin: 50px;
+} */
+
+/* .div1 {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  display: inline;
+}
+
+.div2 {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  display: inline-block;
+} */
+
+section {
+  background-color: black;
+  width: 800px;
+  height: 800px;
+}
+div {
+  width: 50%;
+  height: 50%;
+  background-color: crimson;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
 }
